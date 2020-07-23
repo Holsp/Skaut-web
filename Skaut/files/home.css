@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #405ea0;
+}
+
+h1 {
+    font-family: skautbold;
+}
+
+#topPanel {
+    width: 100%;
+    height: 10vh;
+    background-color: #003f9e;
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+
+#rigelSmall {
+    border: -10vh;
+    height: 3vh;
+    width: auto;
+    transform: scale(4.5)
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-family: skautbold;
+    font-size: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 0vh;
+}
+
+.rigelBtn {
+    height: 7vh;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-family: skautbold;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.btn:hover {
+    transition: 0.4s;
+    /*  Making button bigger on hover  */
+    transform: scale(1.2) perspective(1px)
+}
+.rigelBtn:hover {
+    transition: 0.4s;
+    /*  Making button bigger on hover  */
+    transform: scale(1.2) perspective(1px)
+}
+
+#allContents {
+    left: -300%;
+    width: 700%;
+    height: 180vh;
+    position: relative;
+    display: flex;
+    transition: left 0.5s , top 0.5s;
+}
+.Panel {
+    width: 100%;
+    height: 90vh;
+}
+#domuPanel {
+
+    background-color: #405ea0;
+}
+#infoPanel {
+    background-color: #405ea0;
+}
+#akcePanel {
+    background-color: #405ea0;
+}
+#calendarText {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+#calendarText p {
+    margin-top: 0;
+}
+
+#calendar {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin-left: 5%;
+}
+
+
+
+#homePanel {
+    /*background-color: #0059df;*/
+    background-color: #405ea0;
+}
+#clenPanel {
+    background-color: #405ea0;
+}
+.clenNadpis {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    color: white;
+    font-size: 4.5vh;
+    font-family: skautbold;
+}
+.vedeniCard {
+    display: inline-block;
+    background-color: white;
+    width: 22.2vw;
+    height: 10vw;
+    border-radius: 10px;
+    margin-right: 1vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.vedeniCard:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+.vedeniLeft {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.vedeniAvatar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15%;
+    vertical-align: middle;
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(235, 235, 235);
+    border-width: 5%;
+}
+.vedeniRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+    height: 100%;
+    font-family: skautbold;
+    color: rgb(32, 32, 32);
+}
+.vedeniTitle {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 10%;
+    color: rgb(32, 32, 32);
+}
+.vedeniOstatni {
+    font-size: 0.75vw;
+}
+.vedeniRight p {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+
+#pristavPanel {
+    background-color: #405ea0;
+}
+#ostatniPanel {
+    background-color: #405ea0;
+}
+.title {
+    margin-top: 20vh;
+    margin-left: 12%;
+    width: 50%;
+    height: 12%;
+    color: white;
+    font-size: 8vh;
+    font-family: skautbold;
+}
+.under {
+    margin-left: 15%;
+    width: 50%;
+    color: white;
+    font-size: 3.5vh;
+    font-family: skautbold;
+}
+.content {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+    font-size: 2.5vh;
+    color: white;
+    font-family: themix;
+}
+
+
+#titleImg {
+    width: 35vw;
+    height: auto;
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.goDown {
+    position: relative;
+height: 10%;
+text-align: center;
+font-family: skautbold;
+font-size: 3.5vh;
+margin-top: 1vw;
+cursor: pointer;
+animation-name: arrow;
+animation-duration: 2.5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+.arrow {
+    width: 4vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+@keyframes arrow {
+0% {top: 0px;}
+50% {top: 25px;}
+100% {top: 0px;}
+}
+
+.fade {
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.woff') format('woff'), url('https://cdn.skauting.cz/fonts/TheMix_LT_400.woff2') format('woff2'), url('https://cdn.skauting.cz/fonts/TheMix_LT_400.otf') format('opentype'), url('https://cdn.skauting.cz/fonts/TheMix_LT_400.svg#themix') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff') format('woff'), url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff2') format('woff2'), url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.otf') format('opentype'), url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.svg#themix') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.woff') format('woff'), url('https://cdn.skauting.cz/fonts/TheMix_LT_700.woff2') format('woff2'), url('https://cdn.skauting.cz/fonts/TheMix_LT_700.otf') format('opentype'), url('https://cdn.skauting.cz/fonts/TheMix_LT_700.svg#themix') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff') format('woff'), url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff2') format('woff2'), url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.otf') format('opentype'), url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.svg#themix') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'skautbold';
+    src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot');
+    src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff') format('woff'), url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff2') format('woff2'), url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.otf') format('opentype'), url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.svg#skautbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,41 @@
+<head>
+<style>
+.btn {
+  border-radius: 5px;
+  padding: 15px 55px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+
+.green {
+
+  background-color: #d7d7d7;
+  box-shadow: 3px 5px 5px #888888;
+  border-radius: 2px;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+
+.green:hover {
+  background-color: #000;
+/*  Making button bigger on hover  */
+  transform: scale(1.5) perspective(1px)
+}
+</style>
+</head>
+<body>
+    <div id="buttons">
+        <a href="#" class="btn green">dance</a>
+      </div>
+</body>

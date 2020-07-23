@@ -1,0 +1,226 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="files/loader.css">
+    <link rel="stylesheet" href="files/home.css">
+    <script src="files/move.js"></script>
+</head>
+
+<body>
+<!--Loader-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+        $(window).on('load', function () {
+            setTimeout(removeLoader); //wait for page load PLUS two seconds.
+        });
+        function removeLoader() {
+            $("#loadingDiv").fadeOut(500, function () {
+                // fadeOut complete. Remove the loading div
+                $("#loadingDiv").remove(); //makes page more lightweight 
+            });
+        }</script>
+
+    <div id="topPanel">
+        <div id="buttons">
+
+            <div class="fade btn" id="domu">
+                Domů
+            </div>
+            <div class="btn fade" id="info">
+                Informace
+            </div>
+            <div class="btn fade" id="akce">
+                Akce
+            </div>
+            <div class="rigelBtn fade" id="home">
+                <img src="assets/rigelZnak.png" id="rigelSmall">
+            </div>
+            <div class="btn fade" id="clen">
+                Členové
+            </div>
+            <div class="btn fade" id="pristav">
+                Přístav
+            </div>
+            <div class="btn fade" id="ostatni">
+                Ostatní
+            </div>
+        </div>
+        
+    </div>
+    <div id="allContents">
+        <div id="domuPanel" class="Panel">
+            <div class="title">
+                Domů
+            </div>
+            <div class="under">
+                12. chlapecký oddíl vodních skautů Rigel
+            </div>
+            <div class="content">
+                Jsme <b>chlapecký křesťanský oddíl vodních skautů</b>. Máme začleněnu rozšířenou duchovní výchovu založenou na respektování dětí věřících i bez vyznání.
+                 Naplňujeme skautské výchovné cíle v souladu s křesťanským přístupem k životu, a to v ekumenickém duchu. 
+                 <b>Jednou týdně se scházíme na schůzkách v klubovně</b>, kde můžeme využít kuchyňku, jídelnu, kapli, nebo <b>chodíme plavat do bazénu</b>. 
+                 O prázdninách <b>jezdíme na letní tábor</b>, během roku na výpravy a <b>splouváme řeku</b>.
+            </div>
+        </div>
+        <div id="infoPanel" class="Panel">
+            <div class="title">
+                Info
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+        <div id="akcePanel" class="Panel">
+            <div class="title">
+                Akce
+            </div>
+            <div class="under">
+                Plán akcí oddílu Rigel
+            </div>
+            <div class="content">
+                <div id="calendarText">
+                    <p>Zde v kalendáři vidíte všechny naše akce, jak už oddílové tak i přístavní.</p>
+                    <p>• Náš oddíl pořádá jak čtrnácti denní letní tábor, tak i osmi denní jarní tábor kterého se společně účastní i ostatní oddíly přístavu.</p>
+                    <p>• Jedenkrát měsíčně pořádáme schůzku buď v Loděnici v tašovicích nebo v bazénu v KV aréně (podle ročního období).</p>
+                </div>
+                <div id="calendar">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FPrague&amp;src=c2thdXQuY3pfNHNibnB1bnE0cHBlNDJkY2F2MHYzMWtpbHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c2thdXQuY3pfa3RqYnBxMWxka2hlaDZsc2trMmE3MHZwcnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%239E69AF&amp;color=%234285F4&amp;showTitle=0&amp;showNav=1&amp;showTabs=1&amp;showCalendars=1" style="border-width:0" width="700vh" height="500vh" frameborder="0" scrolling="no"></iframe>                </div>
+            </div>
+        </div>
+        <div id="homePanel" class="Panel">
+            <img src="assets/rigel.png" id="titleImg" class="fade">
+        </div>
+        <div id="clenPanel" class="Panel">
+            <div class="title">
+                Členové
+            </div>
+            <div class="clennadpis">
+                Vedení oddílu
+            </div>
+            <div class="content">
+                <!--VEDENÍ ODDÍLU-->
+                <div class="vedeniCard">
+                    <div class="vedeniLeft">
+                        <img src="assets/avatar.png" class="vedeniAvatar">
+                    </div>
+                    <div class="vedeniRight">
+                        <div class="vedeniTitle">
+                            Michael Vaněček
+                        </div>
+                        <div class="vedeniOstatni">
+                            <p>Funkce: Kapitán oddílu</p>
+                            <p>Přezdívka: Vendy</p>
+                            <p>E-mail: vendy@pristavorion.cz</p>
+                            <p>Tel: 734 642 248</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vedeniCard">
+                    <div class="vedeniLeft">
+                        <img src="assets/avatar2.png" class="vedeniAvatar">
+                    </div>
+                    <div class="vedeniRight">
+                        <div class="vedeniTitle">
+                            Jiří Kučera
+                        </div>
+                        <div class="vedeniOstatni">
+                            <p>Funkce: Palubní</p>
+                            <p>Přezdívka: Hvězdář</p>
+                            <p>E-mail: hvezdar@pristavorion.cz</p>
+                            <p>Tel: 728 109 793</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vedeniCard" style="margin-right: 0;">
+                    <div class="vedeniLeft">
+                        <img src="assets/avatar.png" class="vedeniAvatar">
+                    </div>
+                    <div class="vedeniRight">
+                        <div class="vedeniTitle">
+                            Petr Albrecht
+                        </div>
+                        <div class="vedeniOstatni">
+                            <p>Funkce: Palubní</p>
+                            <p>Přezdívka: Bobr</p>
+                            <p>E-mail: recht@skaut.cz</p>
+                            <p>Tel: 725 405 047</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vedeniCard">
+                    <div class="vedeniLeft">
+                        <img src="assets/avatar2.png" class="vedeniAvatar">
+                    </div>
+                    <div class="vedeniRight">
+                        <div class="vedeniTitle">
+                            Pavel Cink
+                        </div>
+                        <div class="vedeniOstatni">
+                            <p>Funkce: Lodivod</p>
+                            <p>Přezdívka: Šikula</p>
+                            <p>E-mail: sikula@pristavorion.cz</p>
+                            <p>Tel: 731 752 868</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vedeniCard">
+                    <div class="vedeniLeft">
+                        <img src="assets/avatar.png" class="vedeniAvatar">
+                    </div>
+                    <div class="vedeniRight">
+                        <div class="vedeniTitle">
+                            Daniel Vyhlídka
+                        </div>
+                        <div class="vedeniOstatni">
+                            <p>Funkce: Bocman</p>
+                            <p>Přezdívka: Mungo</p>
+                            <p>E-mail: daniel.vyhlidka@pristavorion.cz</p>
+                            <p>Tel: 721 769 273</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vedeniCard" style="margin-right: 0;">
+                    <div class="vedeniLeft">
+                        <img src="assets/avatar2.png" class="vedeniAvatar">
+                    </div>
+                    <div class="vedeniRight">
+                        <div class="vedeniTitle">
+                            Vladimír Müller
+                        </div>
+                        <div class="vedeniOstatni">
+                            <p>Funkce: Duchovní rádce</p>
+                            <p>Přezdívka: Jimm</p>
+                            <p>E-mail: vladmu@tiscali.cz</p>
+                            <p>Tel: 732 662 779</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="goDown" id="clenove">
+                    <img src="assets/arrowDown.png" class="arrow" >
+                    Posádky
+                </div>
+
+
+            </div>
+        </div>
+        <div id="pristavPanel" class="Panel">
+            <div class="title">
+                Přístav
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+        <div id="ostatniPanel" class="Panel">
+            <div class="title">
+                Ostatní
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
