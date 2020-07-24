@@ -1,2 +1,2 @@
 # Skaut-web
-Web fo my scout group
+Web for my scout group
