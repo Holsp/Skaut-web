@@ -172,6 +172,17 @@ h1 {
     margin-bottom: 2.5%;
 }
 
+#clenove2 {
+    position: absolute;
+    z-index: 2;
+    top: 110vh;
+    height: 500%;
+    height: 90vh;
+    width: 100%;
+}
+#clenove2 td {
+    background-color: white;
+}
 
 
 #pristavPanel {

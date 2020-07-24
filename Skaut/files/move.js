@@ -19,7 +19,7 @@ window.onload = function(){
 
 window.onresize = function() {
     scroll(positon);
-    scrollDownOne(positionHor)
+    scrollDownOne(positionHor);
 }
 
 function scroll(move) {
@@ -31,6 +31,6 @@ document.getElementById("allContents").style.top = positionHor * window.innerHei
 }
 
 function scrollDownOne(down) {
-    positionHor = down
+    positionHor = down;
     document.getElementById("allContents").style.top = positionHor * window.innerHeight;
 }
